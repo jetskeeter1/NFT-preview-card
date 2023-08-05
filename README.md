@@ -52,7 +52,7 @@ I learned that I can chain the hover to another element div such as the .overlay
 
 Centering element div:
 - https://blog.hubspot.com/website/center-div-css
-  (I found plenty of different ways to centering a div element, but decided to use tranform:translate(); to get the center div that I want.)
+  I found plenty of different ways to centering a div element, I decided to use translate, but went back to flexbox after realizing what I done.
 
 ## Author
 
