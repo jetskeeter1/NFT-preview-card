@@ -1,0 +1,141 @@
+/* Default */
+body{background-color: hsl(217, 54%, 11%); display: flex; justify-content: center; align-items: center; color: white; font-size: 12px; font-family: 'Outfit', sans-serif;}
+
+/* Will adjust the width size relative to the parent element */
+.preview-wrapper{
+    background-color: hsl(216, 50%, 16%);
+    width: 15rem;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 7em;
+    box-shadow: 
+    0 20px 5px 10px hsl(217, 55%, 10%),
+    0 15px 5px 38px hsl(217, 56%, 12%); /* the fourth input value increase the size 
+    of the shadow*/
+    border-radius: 10px;
+}
+
+.container-image{
+    position: relative;
+}
+
+.container-image:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* gives a sqaure picture and */
+.preview-wrapper img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay{
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.473);
+    border-radius: 10px;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img{
+    width: 3em;
+}
+
+/* fits all the element within the preview wrapper */
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-weight: 600;
+}
+
+.description{
+    color: hsl(215, 51%, 70%);
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.price{
+    width: 100%;
+    margin: 5px 0;
+    font-size: .7em;
+    display: flex;
+    gap: 120px;
+}
+
+.value, .expire-date{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    width: 100%;
+}
+
+.value{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.value img{
+    width: 7px;
+}
+
+.expire-date{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.expire-date img{
+    width: 15px;
+}
+
+/* I gave it a position relative because it move the span element */
+span{
+    color: white;
+    position: relative;
+    right: 8px;
+}
+
+/* Simple enough to create and design the line that gives the creator its own 
+section or helps to be able to focus solely on the main content or the creator */
+hr{
+    width: 100%;
+    color: rgba(187, 187, 187, 0.671);
+    border: 0.5px solid rgba(187, 187, 187, 0.671);
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+/* this aligns the text in the middle next to the image */
+.creator{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.creator img{
+    width: 8%;
+    height: auto;
+    border: 1px solid white;/* It gives that border effect for the creator 
+    image */
+    border-radius: 20px; 
+}
+
+/* Just noticed that when all the content is flex to the center and the 
+ element is position absolute to the bottom will also have it sit at the middle. 
+ */
+.attribution{
+    position: absolute;
+    bottom: 20px;
+}
