@@ -38,8 +38,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - CSS custom properties
 - Flexbox
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 What I learned is the difficulties of trying to get the same result as the background colors and box-shadows that I am trying to get.
